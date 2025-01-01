@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+/*.logo img {
+    max-width: 120px;
+    height: auto;
+}
+.navmenu {
+    display: flex;
+}
+.navmenu a {
+    color: #2c2c2c;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all 0.42s ease;
+}
+.navmenu a:hover {
+    color: #ee1c47;
+}
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+.nav-icon i {
+    margin-right: 20px;
+    color: #2c2c2c;
+    font-family: 25px;
+    font-weight: 400;
+    transition: all 0.42s ease;
+}
+.nav-icon i:hover {
+    transform: scale(1.1);
+    color: #ee1c47;
+}
+#menu-icon {
+    font-size: 35px;
+    color: #2c2c2c;
+    z-index: 10001;
+    cursor: pointer;
+} */
+section {
+    padding: 5% 10%;
+}
+.main-home {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/public/image/banner-3.png");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+.main-text h5 {
+    color: #ee1c47;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+.main-text p {
+    color: #333c56;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.main-btn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid #111;
+    padding: 12px 25px;
+    transition: all 0.42s ease;
+}
+.main-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+.main-btn i {
+    vertical-align: middle;
+}
+
+header.sticky {
+    background: #fff;
+    padding: 20px 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+
+/* trending-section-css */
+.center-text h2 {
+    color: #111;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.center-text span {
+    color: #ee1c47;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+}
+.row {
+    position: relative;
+    transition: all 0.40s;
+}
+.row img {
+    width: 100%;
+    height: auto;
+    transition: all 0.40s;
+}
+.row img:hover {
+    transform: scale(0.9);
+}
+.product-text h5 {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #27b737;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+.heart-icon {
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+.heart-icon:hover {
+    color: #ee1c47;
+}
+.ratting i {
+    color: #ff8c00;
+    font-size: 18px;
+}
+.price h4 {
+    color: #111;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.price p {
+    color: #151515;
+    font-size: 14px;
+    font-weight: 600;
+}
+.client-review {
+    background-color: #f3f4f6;
+}
+.reviews {
+    text-align: center;
+}
+.reviews h3 {
+    color: #111;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+}
+.reviews img {
+    width: 100px;
+    height: auto;
+    border-radius: 50px;
+    margin: 10px 0;
+}
+.reviews p {
+    color: #707070;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.reviews h2 {
+    font-size: 22px;
+    color: #000;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+}
+
+/* update-section-css */
+.up-center-text h2 {
+    text-align: center;
+    color: #111;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.cart-img {
+    width: 380px;
+    height: auto;
+    border-radius: 5px;
+}
+.update-cart {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, auto));
+    gap: 1rem;
+}
+.cart-h5 {
+    color: #636872;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.cart h4 {
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+}
+.cart p {
+    color: #707070;
+    font-size: 15px;
+    max-width: 380px;
+    line-height: 25px;
+    margin-bottom: 12px;
+}
+.cart h6 {
+    color: #151515;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* contact-section */
+.contact {
+    background-color: #f3f4f6;
+}
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 3rem;
+}
+.first-info img {
+    width: 140px;
+    height: auto;
+}
+.contact-info h4 {
+    color: #212121;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.contact-info p {
+    color: #565656;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.42s;
+}
+.contact-info p:hover {
+    color: #ee1c47;
+}
+.social-icon i {
+    color: #565656;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all 0.42s;
+}
+.social-icon i:hover {
+    transform: scale(1.3);
+}
+.end-text {
+    background-color: #edfff1;
+    text-align: center;
+    padding: 20px;
+}
+.end-text p {
+    color: #111;
+    text-transform: capitalize;
+}
+/* Styling utama untuk section contact */
+.contact {
+    background-color: #f9f9f9;
+    padding: 50px 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+/* Styling untuk first-info */
+.first-info {
+    text-align: left;
+}
+
+.first-info img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.first-info p {
+    color: #565656;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.first-info .social-icon {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.first-info .social-icon a {
+    color: #565656;
+    font-size: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.first-info .social-icon a:hover {
+    color: #ee1c47;
+    transform: scale(1.2);
+}
+
+/* Styling untuk bagian footer (nested content) */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
+    margin-top: 10px;
+}
+
+/* Styling untuk tiap kolom dalam footer */
+.footer h4 {
+    color: #111;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #565656;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.footer p:hover {
+    color: #ee1c47;
+}
+
+/* Styling khusus untuk kolom Subscribe */
+.footer .five p:first-of-type {
+    font-weight: bold;
+}
+
+.footer .five p {
+    color: #333333;
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .contact {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .first-info img {
+        margin: 0 auto 20px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+    }
+
+    .footer h4,
+    .footer p {
+        text-align: center;
+    }
+
+    .first-info .social-icon {
+        justify-content: center;
+    }
+}
+
+/* Styling untuk login-menu dan dropdown */
+.login-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.login-icon {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.dropdown {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.dropdown button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown button:hover {
+    background-color: #f0f0f0;
+}
